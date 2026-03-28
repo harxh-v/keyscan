@@ -8,11 +8,10 @@ version = "0.1.0"
 description = "A template-driven engine for validating exposed API keys and secrets."
 readme = "README.md"
 authors = [{ name = "keyscan-author", email = "author@example.com" }]
-license = { text = "MIT" }
+license = "MIT"
 requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 dependencies = [
@@ -25,3 +24,6 @@ dependencies = [
 
 [project.scripts]
 keyscan = "keyscan.cli:main"
+
+[tool.setuptools]
+packages = ["keyscan"]
