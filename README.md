@@ -150,7 +150,7 @@ Contributions are welcome:
 
 ## License
 
-Apache 2.0
+MIT license
 
 ## Author
 
