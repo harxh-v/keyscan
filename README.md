@@ -31,8 +31,6 @@ With keyscan:
 - Runs validation templates automatically
 - Outputs confidence-based results
 
-
-
 ## Features
 
 | Feature | Details |
