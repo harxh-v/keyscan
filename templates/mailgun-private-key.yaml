@@ -1,0 +1,12 @@
+id: mailgun-private-key
+info:
+  name: MailGun Private Key
+requests:
+- method: GET
+  url: https://api.mailgun.net/v3/domains
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

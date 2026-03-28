@@ -1,0 +1,14 @@
+id: firebase-cloud-messaging
+info:
+  name: Firebase Cloud Messaging
+requests:
+- method: POST
+  url: https://fcm.googleapis.com/fcm/send
+  headers:
+    Authorization: key=AI...
+    Content-Type: application/json
+  body: '{"registration_ids":["1"]}'
+matchers:
+- type: status
+  status:
+  - 200

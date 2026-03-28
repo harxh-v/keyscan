@@ -1,0 +1,12 @@
+id: twilio-account_sid-and-auth-token
+info:
+  name: Twilio Account_sid and Auth token
+requests:
+- method: GET
+  url: https://api.twilio.com/2010-04-01/Accounts.json
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

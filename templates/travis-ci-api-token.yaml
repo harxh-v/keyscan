@@ -1,0 +1,13 @@
+id: travis-ci-api-token
+info:
+  name: Travis CI API token
+requests:
+- method: GET
+  url: https://api.travis-ci.org/repos
+  headers:
+    Travis-API-Version: '3'
+    Authorization: token {{key}}
+matchers:
+- type: status
+  status:
+  - 200

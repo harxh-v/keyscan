@@ -1,0 +1,11 @@
+id: mapbox-api-key
+info:
+  name: Mapbox API key
+requests:
+- method: GET
+  url: https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=ACCESS_TOKEN
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

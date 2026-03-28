@@ -1,0 +1,13 @@
+id: visual-studio-app-center-api-token
+info:
+  name: Visual Studio App Center API Token
+requests:
+- method: GET
+  url: https://api.appcenter.ms/v0.1/apps
+  headers:
+    Content-Type: application/json
+    X-Api-Token: '{your_api_token}'
+matchers:
+- type: status
+  status:
+  - 200

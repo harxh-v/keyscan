@@ -1,0 +1,12 @@
+id: new-relic-rest-api
+info:
+  name: New Relic REST API
+requests:
+- method: GET
+  url: https://api.newrelic.com/v2/applications.json
+  headers:
+    X-Api-Key: ${APIKEY}
+matchers:
+- type: status
+  status:
+  - 200

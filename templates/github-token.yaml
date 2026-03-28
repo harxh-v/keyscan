@@ -1,0 +1,12 @@
+id: github-token
+info:
+  name: Github Token
+requests:
+- method: GET
+  url: https://api.github.com/user
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

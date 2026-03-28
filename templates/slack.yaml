@@ -1,0 +1,15 @@
+id: slack-api-key
+info:
+  name: Slack
+requests:
+  - method: POST
+    url: https://slack.com/api/auth.test
+    headers:
+      Authorization: Bearer {{key}}
+matchers:
+  - type: status
+    status:
+      - 200
+  - type: word
+    words:
+      - '"ok": true'

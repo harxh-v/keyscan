@@ -1,0 +1,11 @@
+id: gitlab-personal-access-token
+info:
+  name: Gitlab personal access token
+requests:
+- method: GET
+  url: https://gitlab.example.com/api/v4/projects?private_token=<your_access_token>
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

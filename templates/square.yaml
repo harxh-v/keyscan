@@ -1,0 +1,14 @@
+id: square
+info:
+  name: Square
+requests:
+- method: GET
+  url: https://squareup.com/oauth2/revoke
+  headers:
+    Content-Type: application/json
+    Authorization: Client [CLIENT_SECRET]
+  body: '{"access_token":"[RANDOM_STRING]","client_id":"[APP_ID]"}'
+matchers:
+- type: status
+  status:
+  - 200

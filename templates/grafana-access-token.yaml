@@ -1,0 +1,12 @@
+id: grafana-access-token
+info:
+  name: Grafana Access Token
+requests:
+- method: GET
+  url: http://your-grafana-server-url.com/api/user
+  headers:
+    Authorization: Bearer your-api-key
+matchers:
+- type: status
+  status:
+  - 200

@@ -1,0 +1,11 @@
+id: deviant-art-access-token
+info:
+  name: Deviant Art Access Token
+requests:
+- method: GET
+  url: https://www.deviantart.com/api/v1/oauth2/placebo
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

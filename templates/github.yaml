@@ -1,0 +1,17 @@
+id: github-api-key
+info:
+  name: GitHub
+requests:
+  - method: GET
+    url: https://api.github.com/user
+    headers:
+      Authorization: Bearer {{key}}
+      Accept: application/vnd.github.v3+json
+matchers:
+  - type: status
+    status:
+      - 200
+  - type: word
+    words:
+      - "login"
+      - "url"

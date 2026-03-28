@@ -1,0 +1,12 @@
+id: freshdesk-api-key
+info:
+  name: FreshDesk API Key
+requests:
+- method: GET
+  url: https://domain.freshdesk.com/api/v2/groups/1
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

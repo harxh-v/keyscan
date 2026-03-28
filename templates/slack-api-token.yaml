@@ -1,0 +1,11 @@
+id: slack-api-token
+info:
+  name: Slack API token
+requests:
+- method: GET
+  url: https://slack.com/api/auth.test?token=xoxp-{{key}}&pretty=1
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

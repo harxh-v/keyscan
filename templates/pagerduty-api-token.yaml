@@ -1,0 +1,13 @@
+id: pagerduty-api-token
+info:
+  name: Pagerduty API token
+requests:
+- method: GET
+  url: https://api.pagerduty.com/schedules
+  headers:
+    Accept: application/vnd.pagerduty+json;version=2
+    Authorization: Token token={{key}}
+matchers:
+- type: status
+  status:
+  - 200

@@ -1,0 +1,11 @@
+id: wakatime-api-key
+info:
+  name: WakaTime API Key
+requests:
+- method: GET
+  url: https://wakatime.com/api/v1/users/current?api_key={{key}}
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

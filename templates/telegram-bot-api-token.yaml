@@ -1,0 +1,11 @@
+id: telegram-bot-api-token
+info:
+  name: Telegram Bot API Token
+requests:
+- method: GET
+  url: https://api.telegram.org/bot{{key}}/getMe
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

@@ -1,0 +1,12 @@
+id: dropbox-api
+info:
+  name: Dropbox API
+requests:
+- method: POST
+  url: https://api.dropboxapi.com/2/users/get_current_account
+  headers:
+    Authorization: Bearer {{key}}
+matchers:
+- type: status
+  status:
+  - 200

@@ -1,0 +1,12 @@
+id: saucelabs-username-and-access-key
+info:
+  name: SauceLabs Username and access Key
+requests:
+- method: GET
+  url: https://saucelabs.com/rest/v1/users/USERNAME
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

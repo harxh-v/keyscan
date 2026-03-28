@@ -1,0 +1,13 @@
+id: infura-api-key
+info:
+  name: Infura API key
+requests:
+- method: POST
+  url: https://mainnet.infura.io/v3/<YOUR-API-KEY>
+  headers:
+    Content-Type: application/json
+  body: '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+matchers:
+- type: status
+  status:
+  - 200

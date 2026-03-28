@@ -1,0 +1,12 @@
+id: stripe-live-token
+info:
+  name: Stripe Live Token
+requests:
+- method: GET
+  url: https://api.stripe.com/v1/charges
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

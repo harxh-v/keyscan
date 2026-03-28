@@ -1,0 +1,12 @@
+id: opsgenie-api-key
+info:
+  name: OpsGenie API Key
+requests:
+- method: GET
+  url: https://api.opsgenie.com/v2/alerts
+  headers:
+    Authorization: GenieKey API_KEY
+matchers:
+- type: status
+  status:
+  - 200

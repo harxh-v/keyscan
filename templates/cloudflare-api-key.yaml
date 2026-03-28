@@ -1,0 +1,12 @@
+id: cloudflare-api-key
+info:
+  name: Cloudflare API key
+requests:
+- method: GET
+  url: https://api.cloudflare.com/client/v4/user/tokens/verify
+  headers:
+    Authorization: Bearer <YOUR_API_TOKEN>
+matchers:
+- type: status
+  status:
+  - 200

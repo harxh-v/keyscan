@@ -1,0 +1,13 @@
+id: heroku-api-key
+info:
+  name: Heroku API key
+requests:
+- method: POST
+  url: https://api.heroku.com/apps
+  headers:
+    Accept: application/vnd.heroku+json; version=3
+    Authorization: Bearer API_{{key}}
+matchers:
+- type: status
+  status:
+  - 200

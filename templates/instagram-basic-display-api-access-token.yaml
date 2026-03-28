@@ -1,0 +1,11 @@
+id: instagram-basic-display-api-access-token
+info:
+  name: Instagram Basic Display API Access Token
+requests:
+- method: GET
+  url: https://graph.instagram.com/{user-id}?fields=id,username&access_token={access-token}
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

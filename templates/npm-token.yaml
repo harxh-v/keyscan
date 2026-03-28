@@ -1,0 +1,12 @@
+id: npm-token
+info:
+  name: NPM token
+requests:
+- method: GET
+  url: https://registry.npmjs.org/-/whoami
+  headers:
+    authorization: Bearer 00000000-0000-0000-0000-000000000000
+matchers:
+- type: status
+  status:
+  - 200

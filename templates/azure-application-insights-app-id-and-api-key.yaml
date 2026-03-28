@@ -1,0 +1,12 @@
+id: azure-application-insights-app-id-and-api-key
+info:
+  name: Azure Application Insights APP ID and API Key
+requests:
+- method: GET
+  url: https://api.applicationinsights.io/v1/apps/{APP_ID}/metrics/requests/count
+  headers:
+    x-api-key: '{API_Key}'
+matchers:
+- type: status
+  status:
+  - 200

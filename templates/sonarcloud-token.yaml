@@ -1,0 +1,12 @@
+id: sonarcloud-token
+info:
+  name: Sonarcloud Token
+requests:
+- method: GET
+  url: https://sonarcloud.io/api/authentication/validate
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

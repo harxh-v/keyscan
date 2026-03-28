@@ -1,0 +1,12 @@
+id: asana-access-token
+info:
+  name: Asana Access token
+requests:
+- method: GET
+  url: https://app.asana.com/api/1.0/users/me
+  headers:
+    Authorization: Bearer ACCESS_TOKEN
+matchers:
+- type: status
+  status:
+  - 200

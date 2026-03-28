@@ -1,0 +1,12 @@
+id: iterable-api-key
+info:
+  name: Iterable API Key
+requests:
+- method: GET
+  url: https://api.iterable.com/api/export/data.json?dataTypeName=emailSend&range=Today&onlyFields=List.empty
+  headers:
+    Api_Key: '{API_KEY}'
+matchers:
+- type: status
+  status:
+  - 200

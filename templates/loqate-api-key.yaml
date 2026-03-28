@@ -1,0 +1,11 @@
+id: loqate-api-key
+info:
+  name: Loqate API key
+requests:
+- method: GET
+  url: http://api.addressy.com/Capture/Interactive/Find/v1.00/json3.ws?Key={{key}}&Countries=US,CA&Language=en&Limit=5&Text=BHAR
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

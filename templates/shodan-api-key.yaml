@@ -1,0 +1,11 @@
+id: shodan-api-key
+info:
+  name: Shodan Api Key
+requests:
+- method: GET
+  url: https://api.shodan.io/shodan/host/8.8.8.8?key={{key}}
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

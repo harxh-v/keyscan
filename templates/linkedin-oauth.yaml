@@ -1,0 +1,13 @@
+id: linkedin-oauth
+info:
+  name: LinkedIn OAUTH
+requests:
+- method: POST
+  url: https://www.linkedin.com/oauth/v2/accessToken
+  headers:
+    Content-type: application/x-www-form-urlencoded
+  body: grant_type=client_credentials&client_id=<client-ID>&client_secret=<client-secret>
+matchers:
+- type: status
+  status:
+  - 200

@@ -1,0 +1,13 @@
+id: sendgrid-api-token
+info:
+  name: SendGrid API Token
+requests:
+- method: GET
+  url: https://api.sendgrid.com/v3/scopes
+  headers:
+    Authorization: Bearer SENDGRID_TOKEN-HERE
+    Content-Type: application/json
+matchers:
+- type: status
+  status:
+  - 200

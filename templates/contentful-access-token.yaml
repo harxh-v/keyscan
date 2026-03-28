@@ -1,0 +1,11 @@
+id: contentful-access-token
+info:
+  name: Contentful Access Token
+requests:
+- method: GET
+  url: https://cdn.contentful.com/spaces/SPACE_ID_HERE/entries\?access_token\=ACCESS_{{key}}
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

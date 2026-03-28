@@ -1,0 +1,13 @@
+id: aws-assume-role
+info:
+  name: AWS Assume Role
+requests:
+  - type: command
+    command: aws-ar --role-arn "{{key_part2}}" --new-profile keyscan_test_profile
+    env:
+      AWS_ACCESS_KEY_ID: "{{key_part0}}"
+      AWS_SECRET_ACCESS_KEY: "{{key_part1}}"
+matchers:
+  - type: status
+    status:
+      - 0

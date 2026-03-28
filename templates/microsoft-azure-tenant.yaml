@@ -1,0 +1,13 @@
+id: microsoft-azure-tenant
+info:
+  name: Microsoft Azure Tenant
+requests:
+- method: POST
+  url: https://login.microsoftonline.com/<TENANT_ID>/oauth2/v2.0/token
+  headers:
+    Content-Type: application/x-www-form-urlencoded
+  body: client_id=<CLIENT_ID>&scope=https%3A%2F%2Fgraph.microsoft.com%2F.default&client_secret=<CLIENT_SECRET>&grant_type=client_credentials
+matchers:
+- type: status
+  status:
+  - 200

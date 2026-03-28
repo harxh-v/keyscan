@@ -1,0 +1,11 @@
+id: keen.io-api-key
+info:
+  name: Keen.io API Key
+requests:
+- method: GET
+  url: https://api.keen.io/3.0/projects/PROJECT_ID/events?api_key=READ_KEY
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

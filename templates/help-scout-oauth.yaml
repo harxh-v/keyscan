@@ -1,0 +1,12 @@
+id: help-scout-oauth
+info:
+  name: Help Scout OAUTH
+requests:
+- method: POST
+  url: https://api.helpscout.net/v2/oauth2/token
+  headers: {}
+  body: grant_type=client_credentials
+matchers:
+- type: status
+  status:
+  - 200

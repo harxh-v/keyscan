@@ -1,0 +1,12 @@
+id: zendesk-access-token
+info:
+  name: Zendesk Access token
+requests:
+- method: GET
+  url: https://{subdomain}.zendesk.com/api/v2/tickets.json
+  headers:
+    Authorization: Bearer ACCESS_TOKEN
+matchers:
+- type: status
+  status:
+  - 200

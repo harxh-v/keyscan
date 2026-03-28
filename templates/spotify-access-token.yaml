@@ -1,0 +1,12 @@
+id: spotify-access-token
+info:
+  name: Spotify Access Token
+requests:
+- method: GET
+  url: https://api.spotify.com/v1/me
+  headers:
+    Authorization: Bearer <ACCESS_TOKEN>
+matchers:
+- type: status
+  status:
+  - 200

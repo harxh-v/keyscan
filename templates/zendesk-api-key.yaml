@@ -1,0 +1,12 @@
+id: zendesk-api-key
+info:
+  name: Zendesk Api Key
+requests:
+- method: GET
+  url: https://{target}.zendesk.com/api/v2/users.json
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

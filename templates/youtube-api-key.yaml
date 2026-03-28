@@ -1,0 +1,11 @@
+id: youtube-api-key
+info:
+  name: YouTube API Key
+requests:
+- method: GET
+  url: https://www.googleapis.com/youtube/v3/activities?part=contentDetails&maxResults=25&channelId=UC-lHJZR3Gqxm24_Vd_AJ5Yw&key={{{key}}}
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

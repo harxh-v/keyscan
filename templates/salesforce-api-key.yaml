@@ -1,0 +1,12 @@
+id: salesforce-api-key
+info:
+  name: Salesforce API key
+requests:
+- method: GET
+  url: https://instance_name.salesforce.com/services/data/v20.0/
+  headers:
+    Authorization: Bearer access_{{key}}
+matchers:
+- type: status
+  status:
+  - 200

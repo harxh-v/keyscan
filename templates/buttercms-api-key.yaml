@@ -1,0 +1,11 @@
+id: buttercms-api-key
+info:
+  name: ButterCMS-API-Key
+requests:
+- method: GET
+  url: https://api.buttercms.com/v2/posts/?auth_token=your_api_token
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

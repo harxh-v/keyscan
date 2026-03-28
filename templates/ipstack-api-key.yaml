@@ -1,0 +1,11 @@
+id: ipstack-api-key
+info:
+  name: Ipstack API Key
+requests:
+- method: GET
+  url: https://api.ipstack.com/{ip_address}?access_key={{key}}
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

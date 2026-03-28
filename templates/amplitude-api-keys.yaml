@@ -1,0 +1,12 @@
+id: amplitude-api-keys
+info:
+  name: Amplitude API Keys
+requests:
+- method: GET
+  url: https://amplitude.com/api/2/export?start=20200201T5&end=20210203T20
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

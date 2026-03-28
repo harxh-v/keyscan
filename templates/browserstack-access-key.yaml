@@ -1,0 +1,12 @@
+id: browserstack-access-key
+info:
+  name: BrowserStack Access Key
+requests:
+- method: GET
+  url: https://api.browserstack.com/automate/plan.json
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

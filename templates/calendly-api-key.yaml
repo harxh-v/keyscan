@@ -1,0 +1,12 @@
+id: calendly-api-key
+info:
+  name: Calendly API Key
+requests:
+- method: GET
+  url: https://calendly.com/api/v1/users/me
+  headers:
+    X-TOKEN: <your_token>
+matchers:
+- type: status
+  status:
+  - 200

@@ -1,0 +1,15 @@
+id: sendgrid-api-key
+info:
+  name: SendGrid
+requests:
+  - method: GET
+    url: https://api.sendgrid.com/v3/scopes
+    headers:
+      Authorization: Bearer {{key}}
+matchers:
+  - type: status
+    status:
+      - 200
+  - type: word
+    words:
+      - "scopes"

@@ -1,0 +1,11 @@
+id: circleci-access-token
+info:
+  name: CircleCI Access Token
+requests:
+- method: GET
+  url: https://circleci.com/api/v1.1/me?circle-token={{key}}
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keyscan"
+version = "0.1.0"
+description = "A template-driven engine for validating exposed API keys and secrets."
+readme = "README.md"
+authors = [{ name = "keyscan-author", email = "author@example.com" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "rich>=13.0.0",
+    "httpx>=0.24.1",
+    "PyYAML>=6.0",
+    "pydantic>=2.0.0",
+    "aws-ar>=3.0"
+]
+
+[project.scripts]
+keyscan = "keyscan.cli:main"

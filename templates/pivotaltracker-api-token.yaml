@@ -1,0 +1,12 @@
+id: pivotaltracker-api-token
+info:
+  name: PivotalTracker API Token
+requests:
+- method: GET
+  url: https://www.pivotaltracker.com/services/v5/me?fields=%3Adefault
+  headers:
+    X-TrackerToken: $TOKEN
+matchers:
+- type: status
+  status:
+  - 200

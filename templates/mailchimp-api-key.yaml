@@ -1,0 +1,12 @@
+id: mailchimp-api-key
+info:
+  name: MailChimp API Key
+requests:
+- method: GET
+  url: https://<dc>.api.mailchimp.com/3.0/
+  headers:
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200

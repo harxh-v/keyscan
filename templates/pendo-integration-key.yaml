@@ -1,0 +1,13 @@
+id: pendo-integration-key
+info:
+  name: Pendo Integration Key
+requests:
+- method: GET
+  url: https://app.pendo.io/api/v1/feature
+  headers:
+    content-type: application/json
+    x-pendo-integration-key: '{{key}}'
+matchers:
+- type: status
+  status:
+  - 200

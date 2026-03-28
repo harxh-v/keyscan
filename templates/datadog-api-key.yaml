@@ -1,0 +1,11 @@
+id: datadog-api-key
+info:
+  name: DataDog API key
+requests:
+- method: GET
+  url: https://api.datadoghq.com/api/v1/dashboard?api_key=<api_key>&application_key=<application_key>
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

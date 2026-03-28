@@ -1,0 +1,16 @@
+id: stripe-api-key
+info:
+  name: Stripe
+requests:
+  - method: GET
+    url: https://api.stripe.com/v1/charges
+    headers:
+      Authorization: Bearer {{key}}
+matchers:
+  - type: status
+    status:
+      - 200
+  - type: word
+    words:
+      - "data"
+      - "has_more"

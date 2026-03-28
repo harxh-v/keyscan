@@ -1,0 +1,11 @@
+id: bazaarvoice-passkey
+info:
+  name: Bazaarvoice Passkey
+requests:
+- method: GET
+  url: https://which-cpv-api.bazaarvoice.com/clientInfo?conversationspasskey=<Passkey>
+  headers: {}
+matchers:
+- type: status
+  status:
+  - 200

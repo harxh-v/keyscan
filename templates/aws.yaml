@@ -1,0 +1,18 @@
+id: aws-access-key
+info:
+  name: AWS
+requests:
+  - type: command
+    command: aws sts get-caller-identity
+    env:
+      AWS_ACCESS_KEY_ID: "{{key_part0}}"
+      AWS_SECRET_ACCESS_KEY: "{{key_part1}}"
+matchers:
+  - type: status
+    status:
+      - 0
+  - type: word
+    words:
+      - "UserId"
+      - "Account"
+      - "Arn"

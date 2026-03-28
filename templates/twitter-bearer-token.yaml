@@ -1,0 +1,12 @@
+id: twitter-bearer-token
+info:
+  name: Twitter Bearer token
+requests:
+- method: GET
+  url: https://api.twitter.com/1.1/account_activity/all/subscriptions/count.json
+  headers:
+    authorization: Bearer TOKEN
+matchers:
+- type: status
+  status:
+  - 200

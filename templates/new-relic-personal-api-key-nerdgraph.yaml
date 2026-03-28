@@ -1,0 +1,14 @@
+id: new-relic-personal-api-key-nerdgraph
+info:
+  name: New Relic Personal API Key (NerdGraph)
+requests:
+- method: POST
+  url: https://api.newrelic.com/graphql
+  headers:
+    Content-Type: application/json
+    API-Key: '{{key}}'
+  body: '{ "query":  "{ requestContext { userId apiKey } }" } '
+matchers:
+- type: status
+  status:
+  - 200

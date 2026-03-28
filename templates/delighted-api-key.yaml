@@ -1,0 +1,13 @@
+id: delighted-api-key
+info:
+  name: Delighted API key
+requests:
+- method: GET
+  url: https://api.delighted.com/v1/metrics.json
+  headers:
+    Content-Type: application/json
+    Authorization: Basic {{key_base64}}
+matchers:
+- type: status
+  status:
+  - 200
