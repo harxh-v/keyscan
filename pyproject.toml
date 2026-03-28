@@ -7,7 +7,7 @@ name = "keyscan"
 version = "0.1.0"
 description = "A template-driven engine for validating exposed API keys and secrets."
 readme = "README.md"
-authors = [{ name = "keyscan-author", email = "author@example.com" }]
+authors = [{ name = "Harsh Verma" }]
 license = "MIT"
 requires-python = ">=3.9"
 classifiers = [
