@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "keyscan"
-version = "0.1.0"
+version = "0.1.1"
 description = "A template-driven engine for validating exposed API keys and secrets."
 readme = "README.md"
 authors = [{ name = "Harsh Verma" }]
